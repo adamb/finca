@@ -1,0 +1,11 @@
+{
+  "name": "finca",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy:pages": "wrangler pages deploy --config wrangler-pages.toml .",
+    "deploy:worker": "wrangler deploy --config wrangler.toml"
+  },
+  "devDependencies": {
+    "wrangler": "^4.90.0"
+  }
+}
