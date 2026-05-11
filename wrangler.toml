@@ -1,8 +1,21 @@
 name = "finca"
 main = "cloudflare-worker.js"
-compatibility_date = "2024-09-23"
+compatibility_date = "2024-01-01"
 
-[assets]
-directory = "."
-binding = "ASSETS"
-not_found_handling = "single-page-application"
+# Routes to handle contact form submissions
+[[routes]]
+pattern = "finca.pr/api/contact"
+zone_name = "finca.pr"
+
+[[routes]]
+pattern = "*.finca.pr/api/contact"
+zone_name = "finca.pr"
+
+# Environment variables (set these via Cloudflare dashboard or wrangler secret)
+# [env.production.vars]
+# TO_EMAIL = "info@finca.pr"
+
+# Bindings for KV storage (if needed for rate limiting, etc.)
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "your-kv-namespace-id"
