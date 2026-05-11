@@ -1,0 +1,12 @@
+wrangler.toml
+wrangler-pages.toml
+netlify.toml
+package.json
+package-lock.json
+node_modules
+README.md
+cloudflare-worker.js
+_headers
+_redirects
+.git
+.gitignore
