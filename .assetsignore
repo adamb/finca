@@ -7,6 +7,5 @@ node_modules
 README.md
 cloudflare-worker.js
 _headers
-_redirects
 .git
 .gitignore

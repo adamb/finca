@@ -1,8 +1,0 @@
-# Redirect /home to /
-/home / 301
-
-# Redirect /index.html to /
-/index.html / 301
-
-# Catch-all for SPA routing (if needed in the future)
-/* /index.html 200
